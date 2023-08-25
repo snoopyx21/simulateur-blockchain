@@ -1,0 +1,9 @@
+#!/bin/bash
+set -v 
+pkill rmiregistry
+sleep 1
+rmiregistry $1 &
+sleep 1
+java ServerImpl $1 
+
+

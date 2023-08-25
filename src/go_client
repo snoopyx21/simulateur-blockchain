@@ -1,0 +1,5 @@
+#!/bin/bash
+set -v 
+java Client $1
+
+
